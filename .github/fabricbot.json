@@ -25,6 +25,55 @@
                   "parameters": {}
                 }
               ]
+            },
+            {
+              "operator": "and",
+              "operands": [
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "bodyContains",
+                      "parameters": {
+                        "bodyPattern": "Host [Excel, Word, PowerPoint, etc.]: Word"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "bodyContains",
+                      "parameters": {
+                        "bodyPattern": "Word.run"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "bodyContains",
+                      "parameters": {
+                        "bodyPattern": "Host [Excel, Word, PowerPoint, etc.]: Excel"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "operator": "not",
+                  "operands": [
+                    {
+                      "name": "bodyContains",
+                      "parameters": {
+                        "bodyPattern": "Excel.run"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -529,7 +578,7 @@
           {
             "name": "assignToUser",
             "parameters": {
-              "user": "JinghuiMS"
+              "user": "penglongzhaochina"
             }
           },
           {
@@ -609,7 +658,7 @@
             "name": "assignToUser",
             "parameters": {
               "groupId": "",
-              "user": "JinghuiMS"
+              "user": "penglongzhaochina"
             }
           },
           {
